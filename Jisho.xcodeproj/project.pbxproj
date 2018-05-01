@@ -127,11 +127,11 @@
 		4AE178712098C10700E2FC5B /* Jisho */ = {
 			isa = PBXGroup;
 			children = (
+				4AE178722098C10700E2FC5B /* AppDelegate.swift */,
 				4A83D2EC2098CE800065D49B /* Extensions */,
 				4A83D2EB2098CE620065D49B /* Cells */,
 				4AE178A62098C41900E2FC5B /* Services */,
 				4AE178A32098C11400E2FC5B /* Models */,
-				4AE178722098C10700E2FC5B /* AppDelegate.swift */,
 				4AE178742098C10700E2FC5B /* ViewController.swift */,
 				4AE178762098C10700E2FC5B /* Main.storyboard */,
 				4A83D2F32098D2B00065D49B /* WordDetailViewController.swift */,
