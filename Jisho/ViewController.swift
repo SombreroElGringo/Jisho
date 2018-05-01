@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func searchData(_ sender: UIButton) {
+        
+        if let inputString = textField.text, inputString != "" {
+            Api.init().fetchWordsFromApi(parameter: inputString){
+            
+                print("finish \(words.data.count)")
+                
+                self.performSegue(withIdentifier: "showWords", sender: self)
+            }
+        } else {
+            print("no input")
+        }
+    }
+    
 }
 
