@@ -9,6 +9,7 @@
 import Foundation
 
 var words: Word!
+var arrayOfSentences: [Sentence]!
 
 struct Api {
     
@@ -39,30 +40,29 @@ struct Api {
         }.resume()
     }
     
-    /*func fetchWordsFromApi(parameter: String) {
-        // Need to encode kanji, hiragana & katakana or URL throw a err
+    
+    func fetchSentencesFromApi(parameter: String, completed: @escaping () -> ()) {
         let param = parameter.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
-        guard let myJishoApiURI = URL(string: MY_JISHO_API_URI + "/words/" + param!) else { return }
-        URLSession.shared.dataTask(with: myJishoApiURI) {
+        guard let url = URL(string: MY_JISHO_API_URI + "/sentences/" + param!) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
             
-            (data, response, error) in
-            guard let data = data else { return }
-            
-            do {
-                let decoder = JSONDecoder()
-                /*
-                 if let jsonString = String(data: data, encoding: .utf8) {
-                 print(jsonString)
-                 }
-                 */
-                let wordData = try? decoder.decode(Word.self, from: data)
-                
-                meaningsOfTheWord = wordData
-                
-                //print(wordData!.data[0].japanese[0].reading)
-                
-            } catch let err {
-                print("Err", err)
+            if error == nil {
+                guard let data = data else { return }
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    let sentences = try? decoder.decode(Sentences.self ,from: data)
+                    arrayOfSentences = sentences?.results
+                    
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                }catch {
+                    print("JSON Error")
+                }
             }
-            }.resume()*/
+            }.resume()
+    }
+    
 }

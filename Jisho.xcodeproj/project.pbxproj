@@ -11,6 +11,8 @@
 		4A83D2F02098CEE90065D49B /* CustomWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2EF2098CEE90065D49B /* CustomWordTableViewCell.swift */; };
 		4A83D2F22098CF560065D49B /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2F12098CF560065D49B /* WordTableViewController.swift */; };
 		4A83D2F42098D2B00065D49B /* WordDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2F32098D2B00065D49B /* WordDetailViewController.swift */; };
+		4A83D2F62098E4DE0065D49B /* Sentence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2F52098E4DE0065D49B /* Sentence.swift */; };
+		4A83D2F82098E8BC0065D49B /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2F72098E8BC0065D49B /* Toast.swift */; };
 		4AE178732098C10700E2FC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178722098C10700E2FC5B /* AppDelegate.swift */; };
 		4AE178752098C10700E2FC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178742098C10700E2FC5B /* ViewController.swift */; };
 		4AE178782098C10700E2FC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE178762098C10700E2FC5B /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		4A83D2EF2098CEE90065D49B /* CustomWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordTableViewCell.swift; sourceTree = "<group>"; };
 		4A83D2F12098CF560065D49B /* WordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
 		4A83D2F32098D2B00065D49B /* WordDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailViewController.swift; sourceTree = "<group>"; };
+		4A83D2F52098E4DE0065D49B /* Sentence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sentence.swift; sourceTree = "<group>"; };
+		4A83D2F72098E8BC0065D49B /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		4AE1786F2098C10700E2FC5B /* Jisho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jisho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE178722098C10700E2FC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE178742098C10700E2FC5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE178A42098C12D00E2FC5B /* Word.swift */,
+				4A83D2F52098E4DE0065D49B /* Sentence.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE178A72098C42E00E2FC5B /* Api.swift */,
+				4A83D2F72098E8BC0065D49B /* Toast.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -311,11 +317,13 @@
 			files = (
 				4AE1787B2098C10700E2FC5B /* Jisho.xcdatamodeld in Sources */,
 				4AE178A52098C12D00E2FC5B /* Word.swift in Sources */,
+				4A83D2F62098E4DE0065D49B /* Sentence.swift in Sources */,
 				4AE178752098C10700E2FC5B /* ViewController.swift in Sources */,
 				4A83D2F22098CF560065D49B /* WordTableViewController.swift in Sources */,
 				4AE178A82098C42E00E2FC5B /* Api.swift in Sources */,
 				4A83D2F42098D2B00065D49B /* WordDetailViewController.swift in Sources */,
 				4A83D2F02098CEE90065D49B /* CustomWordTableViewCell.swift in Sources */,
+				4A83D2F82098E8BC0065D49B /* Toast.swift in Sources */,
 				4AE178732098C10700E2FC5B /* AppDelegate.swift in Sources */,
 				4A83D2EE2098CE930065D49B /* Color.swift in Sources */,
 			);

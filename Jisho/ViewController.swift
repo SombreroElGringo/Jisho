@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,14 +26,35 @@ class ViewController: UIViewController {
     @IBAction func searchData(_ sender: UIButton) {
         
         if let inputString = textField.text, inputString != "" {
-            Api.init().fetchWordsFromApi(parameter: inputString){
             
-                print("finish \(words.data.count)")
-                
-                self.performSegue(withIdentifier: "showWords", sender: self)
+            if segmentedControl.selectedSegmentIndex == 0 {
+                searchTheMeaningOfTheWord(word: inputString)
+            } else if segmentedControl.selectedSegmentIndex == 1 {
+                print("Kanji")
+            } else {
+                searchAllKindOfSentencesWith(word: inputString)
             }
+           
         } else {
-            print("no input")
+            Toast.shared.long(self.view, message: "Please! tap a search 🙇‍♂️")
+        }
+    }
+    
+    // Search functions
+    
+    func searchTheMeaningOfTheWord(word: String) {
+        
+        Api.init().fetchWordsFromApi(parameter: word){
+            print("Finish! Number of result => \(words.data.count)")
+            self.performSegue(withIdentifier: "showWords", sender: self)
+        }
+    }
+    
+    func searchAllKindOfSentencesWith(word: String) {
+        
+        Api.init().fetchSentencesFromApi(parameter: word){
+            print("Finish! Number of result => \(arrayOfSentences.count)")
+            //self.performSegue(withIdentifier: "showSentences", sender: self)
         }
     }
     

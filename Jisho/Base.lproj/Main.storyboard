@@ -33,12 +33,22 @@
                                     <action selector="searchData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="33O-2A-N6C"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="BTM-S6-5Zd">
+                                <rect key="frame" x="16" y="467" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Word"/>
+                                    <segment title="Kanji"/>
+                                    <segment title="Sentence"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="ghw-QI-rQM"/>
                     <connections>
+                        <outlet property="segmentedControl" destination="BTM-S6-5Zd" id="Jib-se-AEz"/>
                         <outlet property="textField" destination="BcE-US-LqV" id="0M1-1N-Oq4"/>
                         <segue destination="bLR-zs-cza" kind="show" identifier="showWords" id="uNi-Nn-1kx"/>
                     </connections>
@@ -134,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="r4Q-MG-797">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="r4Q-MG-797">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="r4Q-MG-797" id="q0r-i2-vzb">
@@ -192,4 +202,5 @@
             <point key="canvasLocation" x="3029.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
 </document>
