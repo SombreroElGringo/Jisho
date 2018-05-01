@@ -45,16 +45,24 @@ class ViewController: UIViewController {
     func searchTheMeaningOfTheWord(word: String) {
         
         Api.init().fetchWordsFromApi(parameter: word){
-            print("Finish! Number of result => \(words.data.count)")
-            self.performSegue(withIdentifier: "showWords", sender: self)
+            if let result = words, result.data.count > 0 {
+                print("Finish! Number of result => \(words.data.count)")
+                self.performSegue(withIdentifier: "showWords", sender: self)
+            } else {
+                Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
+            }
         }
     }
     
     func searchAllKindOfSentencesWith(word: String) {
         
         Api.init().fetchSentencesFromApi(parameter: word){
-            print("Finish! Number of result => \(arrayOfSentences.count)")
-            //self.performSegue(withIdentifier: "showSentences", sender: self)
+            if let result = arrayOfSentences, result.count > 0 {
+                print("Finish! Number of result => \(arrayOfSentences.count)")
+                //self.performSegue(withIdentifier: "showSentences", sender: self)
+            } else {
+                Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
+            }
         }
     }
     
