@@ -16,11 +16,19 @@ class WordTableViewController: UITableViewController {
         tableView.delegate = self
         tableView.register(CustomWordTableViewCell.self, forCellReuseIdentifier: "wordCell")
         tableView.rowHeight = 200
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // Back to the previous view
+    
+    @objc func backAction(){
+        dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Table view data source
