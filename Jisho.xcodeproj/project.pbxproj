@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4AE178732098C10700E2FC5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178722098C10700E2FC5B /* AppDelegate.swift */; };
+		4AE178752098C10700E2FC5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178742098C10700E2FC5B /* ViewController.swift */; };
+		4AE178782098C10700E2FC5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE178762098C10700E2FC5B /* Main.storyboard */; };
+		4AE1787B2098C10700E2FC5B /* Jisho.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178792098C10700E2FC5B /* Jisho.xcdatamodeld */; };
+		4AE1787D2098C10900E2FC5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1787C2098C10900E2FC5B /* Assets.xcassets */; };
+		4AE178802098C10900E2FC5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE1787E2098C10900E2FC5B /* LaunchScreen.storyboard */; };
+		4AE1788B2098C10900E2FC5B /* JishoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE1788A2098C10900E2FC5B /* JishoTests.swift */; };
+		4AE178962098C10900E2FC5B /* JishoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE178952098C10900E2FC5B /* JishoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4AE178872098C10900E2FC5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE178672098C10700E2FC5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE1786E2098C10700E2FC5B;
+			remoteInfo = Jisho;
+		};
+		4AE178922098C10900E2FC5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4AE178672098C10700E2FC5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4AE1786E2098C10700E2FC5B;
+			remoteInfo = Jisho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4AE1786F2098C10700E2FC5B /* Jisho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jisho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE178722098C10700E2FC5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4AE178742098C10700E2FC5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AE178772098C10700E2FC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AE1787A2098C10700E2FC5B /* Jisho.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jisho.xcdatamodel; sourceTree = "<group>"; };
+		4AE1787C2098C10900E2FC5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4AE1787F2098C10900E2FC5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4AE178812098C10900E2FC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE178862098C10900E2FC5B /* JishoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JishoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE1788A2098C10900E2FC5B /* JishoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JishoTests.swift; sourceTree = "<group>"; };
+		4AE1788C2098C10900E2FC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AE178912098C10900E2FC5B /* JishoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JishoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AE178952098C10900E2FC5B /* JishoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JishoUITests.swift; sourceTree = "<group>"; };
+		4AE178972098C10900E2FC5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AE1786C2098C10700E2FC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE178832098C10900E2FC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE1788E2098C10900E2FC5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4AE178662098C10700E2FC5B = {
+			isa = PBXGroup;
+			children = (
+				4AE178712098C10700E2FC5B /* Jisho */,
+				4AE178892098C10900E2FC5B /* JishoTests */,
+				4AE178942098C10900E2FC5B /* JishoUITests */,
+				4AE178702098C10700E2FC5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4AE178702098C10700E2FC5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1786F2098C10700E2FC5B /* Jisho.app */,
+				4AE178862098C10900E2FC5B /* JishoTests.xctest */,
+				4AE178912098C10900E2FC5B /* JishoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AE178712098C10700E2FC5B /* Jisho */ = {
+			isa = PBXGroup;
+			children = (
+				4AE178722098C10700E2FC5B /* AppDelegate.swift */,
+				4AE178742098C10700E2FC5B /* ViewController.swift */,
+				4AE178762098C10700E2FC5B /* Main.storyboard */,
+				4AE1787C2098C10900E2FC5B /* Assets.xcassets */,
+				4AE1787E2098C10900E2FC5B /* LaunchScreen.storyboard */,
+				4AE178812098C10900E2FC5B /* Info.plist */,
+				4AE178792098C10700E2FC5B /* Jisho.xcdatamodeld */,
+			);
+			path = Jisho;
+			sourceTree = "<group>";
+		};
+		4AE178892098C10900E2FC5B /* JishoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE1788A2098C10900E2FC5B /* JishoTests.swift */,
+				4AE1788C2098C10900E2FC5B /* Info.plist */,
+			);
+			path = JishoTests;
+			sourceTree = "<group>";
+		};
+		4AE178942098C10900E2FC5B /* JishoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4AE178952098C10900E2FC5B /* JishoUITests.swift */,
+				4AE178972098C10900E2FC5B /* Info.plist */,
+			);
+			path = JishoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AE1786E2098C10700E2FC5B /* Jisho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE1789A2098C10900E2FC5B /* Build configuration list for PBXNativeTarget "Jisho" */;
+			buildPhases = (
+				4AE1786B2098C10700E2FC5B /* Sources */,
+				4AE1786C2098C10700E2FC5B /* Frameworks */,
+				4AE1786D2098C10700E2FC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Jisho;
+			productName = Jisho;
+			productReference = 4AE1786F2098C10700E2FC5B /* Jisho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4AE178852098C10900E2FC5B /* JishoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE1789D2098C10900E2FC5B /* Build configuration list for PBXNativeTarget "JishoTests" */;
+			buildPhases = (
+				4AE178822098C10900E2FC5B /* Sources */,
+				4AE178832098C10900E2FC5B /* Frameworks */,
+				4AE178842098C10900E2FC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE178882098C10900E2FC5B /* PBXTargetDependency */,
+			);
+			name = JishoTests;
+			productName = JishoTests;
+			productReference = 4AE178862098C10900E2FC5B /* JishoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4AE178902098C10900E2FC5B /* JishoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AE178A02098C10900E2FC5B /* Build configuration list for PBXNativeTarget "JishoUITests" */;
+			buildPhases = (
+				4AE1788D2098C10900E2FC5B /* Sources */,
+				4AE1788E2098C10900E2FC5B /* Frameworks */,
+				4AE1788F2098C10900E2FC5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AE178932098C10900E2FC5B /* PBXTargetDependency */,
+			);
+			name = JishoUITests;
+			productName = JishoUITests;
+			productReference = 4AE178912098C10900E2FC5B /* JishoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AE178672098C10700E2FC5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Florent;
+				TargetAttributes = {
+					4AE1786E2098C10700E2FC5B = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					4AE178852098C10900E2FC5B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4AE1786E2098C10700E2FC5B;
+					};
+					4AE178902098C10900E2FC5B = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 4AE1786E2098C10700E2FC5B;
+					};
+				};
+			};
+			buildConfigurationList = 4AE1786A2098C10700E2FC5B /* Build configuration list for PBXProject "Jisho" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AE178662098C10700E2FC5B;
+			productRefGroup = 4AE178702098C10700E2FC5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AE1786E2098C10700E2FC5B /* Jisho */,
+				4AE178852098C10900E2FC5B /* JishoTests */,
+				4AE178902098C10900E2FC5B /* JishoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AE1786D2098C10700E2FC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE178802098C10900E2FC5B /* LaunchScreen.storyboard in Resources */,
+				4AE1787D2098C10900E2FC5B /* Assets.xcassets in Resources */,
+				4AE178782098C10700E2FC5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE178842098C10900E2FC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE1788F2098C10900E2FC5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AE1786B2098C10700E2FC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE1787B2098C10700E2FC5B /* Jisho.xcdatamodeld in Sources */,
+				4AE178752098C10700E2FC5B /* ViewController.swift in Sources */,
+				4AE178732098C10700E2FC5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE178822098C10900E2FC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE1788B2098C10900E2FC5B /* JishoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4AE1788D2098C10900E2FC5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE178962098C10900E2FC5B /* JishoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AE178882098C10900E2FC5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE1786E2098C10700E2FC5B /* Jisho */;
+			targetProxy = 4AE178872098C10900E2FC5B /* PBXContainerItemProxy */;
+		};
+		4AE178932098C10900E2FC5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4AE1786E2098C10700E2FC5B /* Jisho */;
+			targetProxy = 4AE178922098C10900E2FC5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4AE178762098C10700E2FC5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE178772098C10700E2FC5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AE1787E2098C10900E2FC5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE1787F2098C10900E2FC5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AE178982098C10900E2FC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4AE178992098C10900E2FC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4AE1789B2098C10900E2FC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = Jisho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.Jisho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4AE1789C2098C10900E2FC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = Jisho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.Jisho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4AE1789E2098C10900E2FC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = JishoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.JishoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jisho.app/Jisho";
+			};
+			name = Debug;
+		};
+		4AE1789F2098C10900E2FC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = JishoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.JishoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jisho.app/Jisho";
+			};
+			name = Release;
+		};
+		4AE178A12098C10900E2FC5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = JishoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.JishoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jisho;
+			};
+			name = Debug;
+		};
+		4AE178A22098C10900E2FC5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KQ76LPZY2S;
+				INFOPLIST_FILE = JishoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sombreroelgringo.JishoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Jisho;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AE1786A2098C10700E2FC5B /* Build configuration list for PBXProject "Jisho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE178982098C10900E2FC5B /* Debug */,
+				4AE178992098C10900E2FC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE1789A2098C10900E2FC5B /* Build configuration list for PBXNativeTarget "Jisho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE1789B2098C10900E2FC5B /* Debug */,
+				4AE1789C2098C10900E2FC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE1789D2098C10900E2FC5B /* Build configuration list for PBXNativeTarget "JishoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE1789E2098C10900E2FC5B /* Debug */,
+				4AE1789F2098C10900E2FC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AE178A02098C10900E2FC5B /* Build configuration list for PBXNativeTarget "JishoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AE178A12098C10900E2FC5B /* Debug */,
+				4AE178A22098C10900E2FC5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4AE178792098C10700E2FC5B /* Jisho.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4AE1787A2098C10700E2FC5B /* Jisho.xcdatamodel */,
+			);
+			currentVersion = 4AE1787A2098C10700E2FC5B /* Jisho.xcdatamodel */;
+			path = Jisho.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4AE178672098C10700E2FC5B /* Project object */;
+}
