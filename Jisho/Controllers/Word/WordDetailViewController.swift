@@ -29,8 +29,8 @@ class WordDetailViewController: UIViewController {
     func initDetailView() {
         wordLabel.text = selectedWord.japanese[0].word
         readingLabel.text = selectedWord.japanese[0].reading
-        
-        if wordLabel.text == "" {
+       
+        if wordLabel.text == nil {
             wordLabel.text = selectedWord.japanese[0].reading
             readingLabel.text = ""
         }

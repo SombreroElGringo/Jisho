@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A41DFC3209A271D0096E316 /* SentenceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41DFC2209A271D0096E316 /* SentenceTableViewController.swift */; };
+		4A41DFC5209A2A4B0096E316 /* CustomSentenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41DFC4209A2A4B0096E316 /* CustomSentenceTableViewCell.swift */; };
+		4A41DFCA209A2F8F0096E316 /* SentenceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A41DFC9209A2F8F0096E316 /* SentenceDetailViewController.swift */; };
 		4A83D2EE2098CE930065D49B /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2ED2098CE930065D49B /* Color.swift */; };
 		4A83D2F02098CEE90065D49B /* CustomWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2EF2098CEE90065D49B /* CustomWordTableViewCell.swift */; };
 		4A83D2F22098CF560065D49B /* WordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A83D2F12098CF560065D49B /* WordTableViewController.swift */; };
@@ -43,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A41DFC2209A271D0096E316 /* SentenceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceTableViewController.swift; sourceTree = "<group>"; };
+		4A41DFC4209A2A4B0096E316 /* CustomSentenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSentenceTableViewCell.swift; sourceTree = "<group>"; };
+		4A41DFC9209A2F8F0096E316 /* SentenceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceDetailViewController.swift; sourceTree = "<group>"; };
 		4A83D2ED2098CE930065D49B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		4A83D2EF2098CEE90065D49B /* CustomWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWordTableViewCell.swift; sourceTree = "<group>"; };
 		4A83D2F12098CF560065D49B /* WordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewController.swift; sourceTree = "<group>"; };
@@ -92,10 +98,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A41DFC6209A2D420096E316 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4AE178742098C10700E2FC5B /* ViewController.swift */,
+				4A41DFC8209A2D870096E316 /* Sentence */,
+				4A41DFC7209A2D640096E316 /* Word */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4A41DFC7209A2D640096E316 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				4A83D2F32098D2B00065D49B /* WordDetailViewController.swift */,
+				4A83D2F12098CF560065D49B /* WordTableViewController.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		4A41DFC8209A2D870096E316 /* Sentence */ = {
+			isa = PBXGroup;
+			children = (
+				4A41DFC9209A2F8F0096E316 /* SentenceDetailViewController.swift */,
+				4A41DFC2209A271D0096E316 /* SentenceTableViewController.swift */,
+			);
+			path = Sentence;
+			sourceTree = "<group>";
+		};
 		4A83D2EB2098CE620065D49B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				4A83D2EF2098CEE90065D49B /* CustomWordTableViewCell.swift */,
+				4A41DFC4209A2A4B0096E316 /* CustomSentenceTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -136,14 +171,12 @@
 				4A83D2EB2098CE620065D49B /* Cells */,
 				4AE178A62098C41900E2FC5B /* Services */,
 				4AE178A32098C11400E2FC5B /* Models */,
-				4AE178742098C10700E2FC5B /* ViewController.swift */,
+				4A41DFC6209A2D420096E316 /* Controllers */,
 				4AE178762098C10700E2FC5B /* Main.storyboard */,
-				4A83D2F32098D2B00065D49B /* WordDetailViewController.swift */,
 				4AE1787C2098C10900E2FC5B /* Assets.xcassets */,
 				4AE1787E2098C10900E2FC5B /* LaunchScreen.storyboard */,
 				4AE178812098C10900E2FC5B /* Info.plist */,
 				4AE178792098C10700E2FC5B /* Jisho.xcdatamodeld */,
-				4A83D2F12098CF560065D49B /* WordTableViewController.swift */,
 			);
 			path = Jisho;
 			sourceTree = "<group>";
@@ -319,6 +352,9 @@
 				4AE178A52098C12D00E2FC5B /* Word.swift in Sources */,
 				4A83D2F62098E4DE0065D49B /* Sentence.swift in Sources */,
 				4AE178752098C10700E2FC5B /* ViewController.swift in Sources */,
+				4A41DFCA209A2F8F0096E316 /* SentenceDetailViewController.swift in Sources */,
+				4A41DFC5209A2A4B0096E316 /* CustomSentenceTableViewCell.swift in Sources */,
+				4A41DFC3209A271D0096E316 /* SentenceTableViewController.swift in Sources */,
 				4A83D2F22098CF560065D49B /* WordTableViewController.swift in Sources */,
 				4AE178A82098C42E00E2FC5B /* Api.swift in Sources */,
 				4A83D2F42098D2B00065D49B /* WordDetailViewController.swift in Sources */,

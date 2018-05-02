@@ -59,7 +59,7 @@ class ViewController: UIViewController {
         Api.init().fetchSentencesFromApi(parameter: word){
             if let result = arrayOfSentences, result.count > 0 {
                 print("Finish! Number of result => \(arrayOfSentences.count)")
-                //self.performSegue(withIdentifier: "showSentences", sender: self)
+                self.performSegue(withIdentifier: "showSentences", sender: self)
             } else {
                 Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
             }

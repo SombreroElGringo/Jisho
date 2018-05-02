@@ -17,7 +17,7 @@ class WordTableViewController: UITableViewController {
         tableView.register(CustomWordTableViewCell.self, forCellReuseIdentifier: "wordCell")
         tableView.rowHeight = 200
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .plain, target: self, action: #selector(backAction))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backAction))
     }
     
     override func didReceiveMemoryWarning() {
