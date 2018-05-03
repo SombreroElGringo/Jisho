@@ -12,7 +12,6 @@ struct Kanji: Codable {
     
     var query: String
     var found: Bool
-    var jlpt: String
     var strokeCount: Int
     var meaning: String
     
