@@ -10,6 +10,7 @@ import Foundation
 
 var words: Word!
 var arrayOfSentences: [Sentence]!
+var kanjiFetched: Kanji!
 
 struct Api {
     
@@ -62,7 +63,32 @@ struct Api {
                     print("JSON Error")
                 }
             }
-            }.resume()
+        }.resume()
+    }
+    
+    
+    func fetchKanjiFromApi(parameter: String, completed: @escaping () -> ()) {
+        let param = parameter.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlQueryAllowed)
+        guard let url = URL(string: MY_JISHO_API_URI + "/kanji/" + param!) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            if error == nil {
+                guard let data = data else { return }
+                do {
+                    
+                    let decoder = JSONDecoder()
+                    let kanji = try? decoder.decode(Kanji.self ,from: data)
+                    kanjiFetched = kanji
+                    
+                    DispatchQueue.main.async {
+                        completed()
+                    }
+                }catch {
+                    print("JSON Error")
+                }
+            }
+        }.resume()
     }
     
 }

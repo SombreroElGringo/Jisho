@@ -30,7 +30,7 @@ class ViewController: UIViewController {
             if segmentedControl.selectedSegmentIndex == 0 {
                 searchTheMeaningOfTheWord(word: inputString)
             } else if segmentedControl.selectedSegmentIndex == 1 {
-                print("Kanji")
+                searchKanji(kanji: inputString)
             } else {
                 searchAllKindOfSentencesWith(word: inputString)
             }
@@ -60,6 +60,18 @@ class ViewController: UIViewController {
             if let result = arrayOfSentences, result.count > 0 {
                 print("Finish! Number of result => \(arrayOfSentences.count)")
                 self.performSegue(withIdentifier: "showSentences", sender: self)
+            } else {
+                Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
+            }
+        }
+    }
+    
+    func searchKanji(kanji: String) {
+        
+        Api.init().fetchKanjiFromApi(parameter: kanji){
+            if let result = kanjiFetched, result.found == true {
+                print("Finish! Kanji found")
+                self.performSegue(withIdentifier: "showKanjiDetail", sender: self)
             } else {
                 Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
             }

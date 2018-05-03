@@ -10,7 +10,7 @@ import UIKit
 
 class WordDetailViewController: UIViewController {
     
-    var selectedWord: Data!
+    var selectedWord: Datas!
     
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var readingLabel: UILabel!

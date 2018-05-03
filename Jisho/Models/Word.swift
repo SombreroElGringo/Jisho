@@ -10,10 +10,10 @@ import Foundation
 
 struct Word: Codable {
     
-    var data: [Data]
+    var data: [Datas]
 }
 
-struct Data: Codable {
+struct Datas: Codable {
     
     var japanese: [Japanese]
     var senses: [Sense]
