@@ -46,7 +46,8 @@ class ViewController: UIViewController {
         
         Api.init().fetchWordsFromApi(parameter: word){
             if let result = words, result.data.count > 0 {
-                print("Finish! Number of result => \(words.data.count)")
+                
+                histories?.append(History(inputSearched: word, type: "word"))
                 self.performSegue(withIdentifier: "showWords", sender: self)
             } else {
                 Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
@@ -58,7 +59,8 @@ class ViewController: UIViewController {
         
         Api.init().fetchSentencesFromApi(parameter: word){
             if let result = arrayOfSentences, result.count > 0 {
-                print("Finish! Number of result => \(arrayOfSentences.count)")
+                
+                histories?.append(History(inputSearched: word, type: "sentence"))
                 self.performSegue(withIdentifier: "showSentences", sender: self)
             } else {
                 Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
@@ -70,7 +72,8 @@ class ViewController: UIViewController {
         
         Api.init().fetchKanjiFromApi(parameter: kanji){
             if let result = kanjiFetched, result.found == true {
-                print("Finish! Kanji found")
+                
+                histories?.append(History(inputSearched: kanji, type: "kanji"))
                 self.performSegue(withIdentifier: "showKanjiDetail", sender: self)
             } else {
                 Toast.shared.long(self.view, message: "Sumimasen! We have no results 🙇‍♂️")
