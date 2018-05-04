@@ -128,47 +128,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="犬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-bC-RVZ">
-                                <rect key="frame" x="16" y="100" width="343" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="犬" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQu-bC-RVZ">
+                                <rect key="frame" x="16" y="114" width="343" height="54"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="いぬ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK9-Vr-wLG">
-                                <rect key="frame" x="16" y="158" width="343" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いぬ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yK9-Vr-wLG">
+                                <rect key="frame" x="16" y="176" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="1° dog (Canis (lupus) familiaris)​                                2° snoop (i.e. a detective, a spy, etc.)​" translatesAutoresizingMaskIntoConstraints="NO" id="4US-bB-VeX">
-                                <rect key="frame" x="16" y="208" width="343" height="250"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="1° dog (Canis (lupus) familiaris)​                                2° snoop (i.e. a detective, a spy, etc.)​" translatesAutoresizingMaskIntoConstraints="NO" id="4US-bB-VeX">
+                                <rect key="frame" x="16" y="236" width="343" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="NcB-pZ-ZvW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Other forms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RG0-hs-fE8">
-                                <rect key="frame" x="16" y="466" width="104" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other forms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RG0-hs-fE8">
+                                <rect key="frame" x="16" y="494" width="343" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="狗 【いぬ】、イヌ" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gas-Eb-JQd">
-                                <rect key="frame" x="16" y="498" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="狗 【いぬ】、イヌ" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="jf7-wB-Vdn">
+                                <rect key="frame" x="16" y="526" width="343" height="133"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="trailing" secondItem="RG0-hs-fE8" secondAttribute="trailing" constant="16" id="0Ns-rm-a8h"/>
+                            <constraint firstItem="RG0-hs-fE8" firstAttribute="leading" secondItem="j6F-GP-CiD" secondAttribute="leading" constant="16" id="0uC-w3-7Fg"/>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="trailing" secondItem="cQu-bC-RVZ" secondAttribute="trailing" constant="16" id="7eh-nP-bOv"/>
+                            <constraint firstItem="4US-bB-VeX" firstAttribute="top" secondItem="yK9-Vr-wLG" secondAttribute="bottom" constant="30" id="Dn2-kg-euL"/>
+                            <constraint firstItem="jf7-wB-Vdn" firstAttribute="top" secondItem="RG0-hs-fE8" secondAttribute="bottom" constant="8" id="IFS-tT-s2w"/>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="trailing" secondItem="4US-bB-VeX" secondAttribute="trailing" constant="16" id="JQz-7P-T2N"/>
+                            <constraint firstItem="cQu-bC-RVZ" firstAttribute="leading" secondItem="j6F-GP-CiD" secondAttribute="leading" constant="16" id="Ozb-sN-er8"/>
+                            <constraint firstItem="4US-bB-VeX" firstAttribute="leading" secondItem="j6F-GP-CiD" secondAttribute="leading" constant="16" id="XIw-MM-zxb"/>
+                            <constraint firstItem="cQu-bC-RVZ" firstAttribute="top" secondItem="j6F-GP-CiD" secondAttribute="top" constant="50" id="Yiw-TV-9Xn"/>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="trailing" secondItem="yK9-Vr-wLG" secondAttribute="trailing" constant="16" id="c4r-7d-PEu"/>
+                            <constraint firstItem="jf7-wB-Vdn" firstAttribute="leading" secondItem="j6F-GP-CiD" secondAttribute="leading" constant="16" id="gh5-8c-MVG"/>
+                            <constraint firstItem="yK9-Vr-wLG" firstAttribute="top" secondItem="cQu-bC-RVZ" secondAttribute="bottom" constant="8" id="iBY-LN-hlL"/>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="trailing" secondItem="jf7-wB-Vdn" secondAttribute="trailing" constant="16" id="jHX-6c-e2B"/>
+                            <constraint firstItem="yK9-Vr-wLG" firstAttribute="leading" secondItem="j6F-GP-CiD" secondAttribute="leading" constant="16" id="oTq-SY-xSy"/>
+                            <constraint firstItem="RG0-hs-fE8" firstAttribute="top" secondItem="4US-bB-VeX" secondAttribute="bottom" constant="8" id="r1Y-qt-cE4"/>
+                            <constraint firstItem="j6F-GP-CiD" firstAttribute="bottom" secondItem="jf7-wB-Vdn" secondAttribute="bottom" constant="8" id="wBo-mo-aBO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="j6F-GP-CiD"/>
                     </view>
                     <connections>
-                        <outlet property="otherFormsLabel" destination="Gas-Eb-JQd" id="o4M-V8-zUf"/>
+                        <outlet property="otherFormsTextView" destination="jf7-wB-Vdn" id="lik-ja-uZp"/>
                         <outlet property="readingLabel" destination="yK9-Vr-wLG" id="Hex-v0-GaC"/>
                         <outlet property="sensesTextView" destination="4US-bB-VeX" id="Sl1-NP-FDe"/>
                         <outlet property="wordLabel" destination="cQu-bC-RVZ" id="0wr-nD-KvG"/>
@@ -176,7 +192,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nA5-xc-GMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4405.6000000000004" y="133.5832083958021"/>
+            <point key="canvasLocation" x="4404" y="132.68365817091455"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eQp-9v-6eG">

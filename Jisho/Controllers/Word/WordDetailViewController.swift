@@ -15,7 +15,7 @@ class WordDetailViewController: UIViewController {
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var readingLabel: UILabel!
     @IBOutlet weak var sensesTextView: UITextView!
-    @IBOutlet weak var otherFormsLabel: UILabel!
+    @IBOutlet weak var otherFormsTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,7 +48,7 @@ class WordDetailViewController: UIViewController {
             
             y = y + 1
             if y == 1 { continue }
-            if y >= 3 {
+            if y >= 6 {
                 otherForms += " ..."
                 break
             }
@@ -70,7 +70,7 @@ class WordDetailViewController: UIViewController {
                 }
             }
         }
-        otherFormsLabel.text = otherForms
+        otherFormsTextView.text = otherForms
     }
     
     func getWordSenses(arrOfDefinitions: [String]) -> String {
