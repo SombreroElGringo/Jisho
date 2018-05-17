@@ -81,16 +81,16 @@ class WordTableViewController: UITableViewController {
                 
                 if let word = item.word, word != "" {
                     otherForms += word
-                    if item.reading.count > 0 { otherForms += " [\(item.reading)]" }
+                    if let reading = item.reading, reading != "" { otherForms += " [\(reading)]" }
                 } else {
-                    otherForms += "\(item.reading)"
+                    if let reading = item.reading, reading != "" { otherForms += "\(reading)" }
                 }
             } else {
                 if let word = item.word, word != "" {
                     otherForms += ", \(word)"
-                    if item.reading.count > 0 { otherForms += " [\(item.reading)]" }
+                    if let reading = item.reading, reading != "" { otherForms += " [\(reading)]" }
                 } else {
-                    otherForms += ", \(item.reading)"
+                    if let reading = item.reading, reading != "" { otherForms += ", \(reading)" }
                 }
             }
         }

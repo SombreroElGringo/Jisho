@@ -14,7 +14,7 @@ var kanjiFetched: Kanji!
 
 struct Api {
     
-    private let MY_JISHO_API_URI = "http://localhost:5000/api/v1/search"
+    private let MY_JISHO_API_URI = "https://jisho-api.herokuapp.com/api/v1/search"
     
     
     func fetchWordsFromApi(parameter: String, completed: @escaping () -> ()) {
@@ -34,8 +34,6 @@ struct Api {
                     DispatchQueue.main.async {
                         completed()
                     }
-                }catch {
-                    print("JSON Error")
                 }
             }
         }.resume()
@@ -59,8 +57,6 @@ struct Api {
                     DispatchQueue.main.async {
                         completed()
                     }
-                }catch {
-                    print("JSON Error")
                 }
             }
         }.resume()
@@ -84,8 +80,6 @@ struct Api {
                     DispatchQueue.main.async {
                         completed()
                     }
-                }catch {
-                    print("JSON Error")
                 }
             }
         }.resume()

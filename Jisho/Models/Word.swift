@@ -17,23 +17,13 @@ struct Datas: Codable {
     
     var japanese: [Japanese]
     var senses: [Sense]
-    
-    private enum CodingKeys: String, CodingKey {
-        case japanese
-        case senses
-    }
 }
 
 
 struct Japanese: Codable {
     
     var word: String?
-    var reading: String
-    
-    private enum CodingKeys: String, CodingKey {
-        case word
-        case reading
-    }
+    var reading: String?
 }
 
 

@@ -25,6 +25,10 @@ class KanjiDetailViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Back", style: .plain, target: self, action: #selector(backAction))
+        
+        let pictureTap = UITapGestureRecognizer(target: self, action: #selector(KanjiDetailViewController.imageTapped(_:)))
+        strokeDiagramImage.addGestureRecognizer(pictureTap)
+        strokeDiagramImage.isUserInteractionEnabled = true
 
         queryLabel.text = kanjiFetched.query
         meaningLabel.text = kanjiFetched.meaning
@@ -50,6 +54,26 @@ class KanjiDetailViewController: UIViewController {
     
     @objc func backAction(){
         dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFit
+        newImageView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
     }
     
     override func didReceiveMemoryWarning() {
