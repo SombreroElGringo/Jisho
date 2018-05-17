@@ -26,7 +26,7 @@ class CustomWordTableViewCell: UITableViewCell {
         textView.text = "犬"
         textView.font = .systemFont(ofSize: 40)
         textView.textColor = UIColor.black
-        textView.backgroundColor = .red
+        // textView.backgroundColor = .red
         textView.isEditable = false
         textView.isScrollEnabled = false
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +38,7 @@ class CustomWordTableViewCell: UITableViewCell {
         textView.text = "いぬ"
         textView.font = .systemFont(ofSize: 20)
         textView.textColor = UIColor.black
-        textView.backgroundColor = .green
+        // textView.backgroundColor = .green
         textView.textAlignment = .center
         textView.isEditable = false
         textView.isScrollEnabled = false
@@ -51,7 +51,7 @@ class CustomWordTableViewCell: UITableViewCell {
         textView.text = "1° Dog"
         textView.font = .systemFont(ofSize: 16)
         textView.textColor = UIColor.black
-        textView.backgroundColor = .yellow
+        // textView.backgroundColor = .yellow
         textView.isEditable = false
         textView.isScrollEnabled = false
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,7 +63,7 @@ class CustomWordTableViewCell: UITableViewCell {
         label.text = "Other forms"
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textColor = UIColor.black
-        label.backgroundColor = .orange
+        // label.backgroundColor = .orange
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -73,7 +73,7 @@ class CustomWordTableViewCell: UITableViewCell {
         textView.text = "狗 (いぬ)、イヌ"
         textView.font = .systemFont(ofSize: 16)
         textView.textColor = UIColor.black
-        textView.backgroundColor = .cyan
+        // textView.backgroundColor = .cyan
         textView.isEditable = false
         textView.isScrollEnabled = false
         textView.translatesAutoresizingMaskIntoConstraints = false

@@ -38,9 +38,9 @@ class SentenceTableViewController: UITableViewController {
 
         let sentence = arrayOfSentences[indexPath.row]
 
-        cell.kanjiView.text = sentence.kanji
-        cell.kanaView.text = sentence.kana
-        cell.englishView.text = sentence.english
+        cell.kanjiView.text = "⛩️ \(String(describing: sentence.kanji!))"
+        cell.kanaView.text = "💮 \(String(describing: sentence.kana!))"
+        cell.englishView.text = "🇬🇧 \(String(describing: sentence.english!))"
         return cell
     }
     

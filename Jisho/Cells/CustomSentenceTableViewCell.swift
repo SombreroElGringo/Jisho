@@ -29,7 +29,7 @@ class CustomSentenceTableViewCell: UITableViewCell {
         labelView.text = "チューたろうは田中さんの犬です"
         labelView.font = .systemFont(ofSize: 20)
         labelView.textColor = UIColor.black
-        labelView.backgroundColor = .red
+        // labelView.backgroundColor = .red
         labelView.translatesAutoresizingMaskIntoConstraints = false
         return labelView
     }()
@@ -42,7 +42,7 @@ class CustomSentenceTableViewCell: UITableViewCell {
         labelView.text = "チューたろうは田中さんのいぬです"
         labelView.font = .systemFont(ofSize: 20)
         labelView.textColor = UIColor.black
-        labelView.backgroundColor = .yellow
+        // labelView.backgroundColor = .yellow
         labelView.translatesAutoresizingMaskIntoConstraints = false
         return labelView
     }()
@@ -55,7 +55,7 @@ class CustomSentenceTableViewCell: UITableViewCell {
         labelView.text = "Chewtarou is Mrs Tanaka's dog."
         labelView.font = .systemFont(ofSize: 20)
         labelView.textColor = UIColor.black
-        labelView.backgroundColor = .orange
+        // labelView.backgroundColor = .orange
         labelView.translatesAutoresizingMaskIntoConstraints = false
         return labelView
     }()
