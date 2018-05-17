@@ -12,6 +12,10 @@ Clone or Download the project
 
 Open the project with Xcode & let's fun 🎉
 
+## Overview
+
+![Imgur](https://i.imgur.com/IlSFbnR.png)
+
 ## Demo
 
 **Home**
@@ -41,8 +45,6 @@ Open the project with Xcode & let's fun 🎉
 **Search history**
 
 ![Imgur](https://i.imgur.com/NCbnmMV.png)
-
-## Overview
 
 
 ## License - MIT
